@@ -1,3 +1,4 @@
+<!-- Pythagorean Theorem Calculator-->
 <!doctype html>
 <html lang="en-us">
 
@@ -9,7 +10,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+ 
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -24,16 +25,19 @@
   <h3>Input at least two known sides.</h3>
 
   <p>Side A</p>
-  <input type="number" id="sideA" placeholder="Input side a"/>
+  <input type="number" id="sideA" name="sideA" placeholder="Input side a"/>
 
   <p>Side B</p>
-  <input type="number" id="sideB" placeholder="Input side b"/>
+  <input type="number" id="sideB" name="sideB" placeholder="Input side b"/>
 
   <p>Side C</p>
-  <input type="number" id="sideC" placeholder="Input side c"/>
+  <input type="number" id="sideC" name="sideC" placeholder="Input side c"/>
   <br>
   <button id="onClick">Click to find the missing side</button>
 
+  <p>Side A =</p><p id="side-a-result">side A result goes here</p>
+  <p>Side B =</p><p id="side-b-result">side B result goes here</p>
+  <p>Side C =</p><p id="side-c-result">side C result goes here</p>
   
 
 
