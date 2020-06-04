@@ -1,62 +1,60 @@
 <!doctype html>
 <html lang="en-us">
-<!-- Pythagorean Theorem Calculator-->
-<head>
-  <meta charset="utf-8">
-  <title>Pythagorean Theorem Calculator</title>
-  <meta name="description" content="App to solve Pythagorean Theorem problems">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Pythagorean Theorem Calculator-->
+  <head>
+    <meta charset="utf-8">
+    <title>Pythagorean Theorem Calculator</title>
+    <meta name="description" content="App to solve Pythagorean Theorem problems">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
- 
-  <!--Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+  
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
 
-<body>
-  <div id="container-fluid">
-    <h1>Pythagorean Theorem Calculator</h1> 
-    <img src="img/pythagorean-theorem.png" alt="Pythagorean Theorem" class="img-fluid" id="blackboard"/>
-    
-    <form class="col-md-4 mx-auto px-5 my-3">
-      <h2>Input known sides.</h2>
-      <div class="form-group mx-5">
-        <label for="sideA">Side a</label>
-        <input type="number" id="side-a-input" class="form-control text-center" name="sideA" placeholder="Input side a" value="">
-      </div>
-      <div class="form-group mx-5">
-        <label for="sideB">Side b</label>
-        <input type="number" id="side-b-input" class="form-control text-center" name="sideB" placeholder="Input side b" value="">
-      </div>
-      <div class="form-group mx-5">
-        <label for="sideC">Side c</label>
-        <input type="number" id="side-c-input" name="sideC" class="form-control text-center" placeholder="Input side c" valule="">
-      </div>
-      <div class="button-group">
-        <button type="button" id="onClick" class="btn btn-info my-3">Find the missing side</button>
-        <br>
-        <button type="button" id="reset" class="btn btn-success my-3">Start over</button>
-      </div>
-    </form>
-
-    <div class="">
+  <body>
+    <main id="container-fluid">
+      <h1>Pythagorean Theorem Calculator</h1> 
+      <img src="img/pythagorean-theorem.png" alt="Pythagorean Theorem" class="img-fluid" id="blackboard"/>
+      
+      <form class="col-md-4 mx-auto px-5 my-3">
+        <h2>Input known sides.</h2>
+        <div class="form-group mx-5">
+          <label for="sideA">Side a</label>
+          <input type="number" id="side-a-input" class="form-control text-center" name="sideA" placeholder="Input side a" value="">
+        </div>
+        <div class="form-group mx-5">
+          <label for="sideB">Side b</label>
+          <input type="number" id="side-b-input" class="form-control text-center" name="sideB" placeholder="Input side b" value="">
+        </div>
+        <div class="form-group mx-5">
+          <label for="sideC">Side c</label>
+          <input type="number" id="side-c-input" name="sideC" class="form-control text-center" placeholder="Input side c" valule="">
+        </div>
+        <div class="button-group">
+          <button type="button" id="onClick" class="btn btn-info my-3">Find the missing side</button>
+          <br>
+          <button type="button" id="reset" class="btn btn-success my-3">Start over</button>
+        </div>
+      </form>
+    </main>
+    <footer>
       <h4>&copy;2020 Casey Pitman</h4>
-    </div>
-  </div>
- 
+    </footer>
+  
+  <!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 
-<!--Scripts-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-
-</body>
+  </body>
 
 </html>
 
